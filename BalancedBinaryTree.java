@@ -4,7 +4,10 @@ import helpers.TreePrinter;
 public class BalancedBinaryTree {
 
     public static void main(String[] args){
-        Integer[] test = {1,2,2,3,3,null,null,4,4};
+        Integer[] test =
+                //{2,null,3,null,4,null,5,null,6};
+                {1,2,3,4,null,null,5};
+
 
         TreeNode testTree = new TreeNode(test);
 

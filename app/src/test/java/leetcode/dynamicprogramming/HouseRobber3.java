@@ -1,6 +1,7 @@
 package leetcode.dynamicprogramming;
 
 import leetcode.graphs.bfs.helpers.TreeNode;
+import leetcode.graphs.bfs.helpers.TreePrinter;
 import org.junit.Test;
 
 import java.util.*;
@@ -12,6 +13,7 @@ public class HouseRobber3 {
     @Test
     public void testHouseRobber3() {
         TreeNode toTest = new TreeNode(new Integer[]{3,2,3,null,3,null,1});
+        TreePrinter.printTree(toTest);
         assertEquals(7, rob(toTest));
     }
 
@@ -20,31 +22,41 @@ public class HouseRobber3 {
 
         - dp(i) => max(skip, rob)
             skip => max(i.left, i.right)
-            rob max(i.left.children, i.right.children)
+            rob => rob(i.left.children) + rob(i.right.children) + root.val
 
         - base case => dp(null) = 0
     */
     Map<TreeNode, Integer> mem = new HashMap<>();
+
     public int rob(TreeNode root) {
         // base case
-        if(root == null){
+        if (root == null) {
             return 0;
         }
 
         // mem
-        if(mem.containsKey(root)){
+        if (mem.containsKey(root)) {
             return mem.get(root);
         }
 
         // skip by default
-        int ans = Math.max(rob(root.left), rob(root.right));
+        int skip =  rob(root.left) + rob(root.right);
 
-        // rob left child
-        ans = Math.max(ans, Math.max(rob(root.left.left) , rob(root.left.right)));
+        // start robbing
+        int rob = 0;
+        if (root.left != null) {
+            // rob left childs children ... skip a house
+            rob += rob(root.left.left) + rob(root.left.right);
+        }
 
-        // rob left child
-        ans = Math.max(ans, Math.max(rob(root.right.left) , rob(root.right.right)));
+        if (root.right != null) {
+            // rob right childs children .... skip a house
+            rob += rob(root.right.left) + rob(root.right.right);
+        }
 
+        rob += root.val;
+
+        int ans = Math.max(skip, rob);
         mem.put(root, ans);
 
         return mem.get(root);

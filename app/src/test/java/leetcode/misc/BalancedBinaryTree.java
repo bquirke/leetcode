@@ -1,8 +1,8 @@
 package leetcode.misc;
 
 
-import leetcode.graphs.bfs.helpers.TreeNode;
-import leetcode.graphs.bfs.helpers.TreePrinter;
+import leetcode.helpers.TreeNode;
+import leetcode.helpers.TreePrinter;
 
 public class BalancedBinaryTree {
 

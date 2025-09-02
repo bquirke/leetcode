@@ -1,4 +1,4 @@
-package leetcode.graphs.bfs.helpers;
+package leetcode.helpers;
 
 public enum Colour {
     RED(0),

@@ -1,4 +1,4 @@
-package leetcode.graphs.bfs.helpers;
+package leetcode.helpers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

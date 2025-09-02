@@ -1,6 +1,6 @@
 package leetcode.graphs.bfs;
 
-import leetcode.graphs.bfs.helpers.State;
+import leetcode.helpers.State;
 import org.junit.Test;
 
 import java.util.LinkedList;

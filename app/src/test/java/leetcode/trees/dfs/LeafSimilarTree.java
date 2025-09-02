@@ -1,6 +1,6 @@
 package leetcode.trees.dfs;
 
-import leetcode.graphs.bfs.helpers.TreeNode;
+import leetcode.helpers.TreeNode;
 import org.junit.Test;
 import java.util.*;
 import static org.junit.Assert.*;

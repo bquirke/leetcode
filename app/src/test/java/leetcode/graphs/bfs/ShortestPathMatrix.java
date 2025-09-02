@@ -2,7 +2,7 @@ package leetcode.graphs.bfs;
 
 
 
-import leetcode.graphs.bfs.helpers.State;
+import leetcode.helpers.State;
 
 import java.util.LinkedList;
 import java.util.Queue;

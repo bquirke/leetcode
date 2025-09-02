@@ -1,7 +1,7 @@
 package leetcode.trees.dfs;
 
-import leetcode.graphs.bfs.helpers.TreeNode;
-import leetcode.graphs.bfs.helpers.TreePrinter;
+import leetcode.helpers.TreeNode;
+import leetcode.helpers.TreePrinter;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

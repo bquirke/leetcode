@@ -1,6 +1,6 @@
 package leetcode.dynamicprogramming.matrix;
 
-import leetcode.graphs.bfs.helpers.TestResourceUtils;
+import leetcode.helpers.TestResourceUtils;
 import org.junit.Test;
 
 import java.io.IOException;

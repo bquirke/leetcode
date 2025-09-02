@@ -1,8 +1,8 @@
 package leetcode.trees.bfs;
 
 
-import leetcode.graphs.bfs.helpers.PrettyPrintTree;
-import leetcode.graphs.bfs.helpers.TreeNode;
+import leetcode.helpers.PrettyPrintTree;
+import leetcode.helpers.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

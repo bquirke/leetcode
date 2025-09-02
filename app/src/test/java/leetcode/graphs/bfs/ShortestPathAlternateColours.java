@@ -1,12 +1,12 @@
 package leetcode.graphs.bfs;
 
-import leetcode.graphs.bfs.helpers.Colour;
-import leetcode.graphs.bfs.helpers.ColourState;
+import leetcode.helpers.Colour;
+import leetcode.helpers.ColourState;
 
 import java.util.*;
 
-import static leetcode.graphs.bfs.helpers.Colour.BLUE;
-import static leetcode.graphs.bfs.helpers.Colour.RED;
+import static leetcode.helpers.Colour.BLUE;
+import static leetcode.helpers.Colour.RED;
 
 public class ShortestPathAlternateColours {
 

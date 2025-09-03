@@ -1,4 +1,4 @@
-package app.src.test.java.leetcode.batch2;
+package leetcode.batch2;
 
 import java.util.ArrayList;
 import java.util.List;

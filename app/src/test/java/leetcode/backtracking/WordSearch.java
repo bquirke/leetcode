@@ -1,4 +1,4 @@
-package app.src.test.java.leetcode.backtracking;
+package leetcode.backtracking;
 
 import org.junit.Test;
 
